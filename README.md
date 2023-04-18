@@ -25,7 +25,7 @@ A tool to ...
 - Run in two seperate terminal sessions:
     - `uvicorn app.main_service.main:app --reload --port 8080`
     - `uvicorn app.model_service.main:app --reload --port 8000`
-- Go to 127.0.0.1:8080
+- Go to 127.0.0.1:8080 in your browser
 ## Tech Stack
 
 **Client:** Jinja2, HTML, Bootstrap-4.2.2
