@@ -1,6 +1,6 @@
-
-![Logo](https://github.com/PsychoRover/ResuMe/blob/2614dc23c36fde5e1aefeeb24a79fa126d11810a/logo.png)
-
+<p align="center">
+<img src="https://github.com/PsychoRover/ResuMe/blob/2614dc23c36fde5e1aefeeb24a79fa126d11810a/logo.png" />
+</p>
 
 # ResuMe
 
