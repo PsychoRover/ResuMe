@@ -1,7 +1,13 @@
 {% extends "index.html" %}
+
 {% block css_link %}
     <link rel="stylesheet" type="text/css" href="/static/about/styles.min.css"/>
 {% endblock %}
+
+{% block js_link %}
+    <script src="/static/about/script.js"></script>
+{% endblock %}
+
 {% block content %}
     {% include "components/navbar.html" %}
 
@@ -66,17 +72,17 @@
                 <div class="col-lg-6">
                     <div id="team-images">
                         <img
-                                src="../static/homepage/about-pic1.jpg"
+                                src="/static/about/img1.jpeg"
                                 alt="Team"
                                 class="img-fluid mb-4"
                         />
                         <img
-                                src="../static/homepage/about-pic2.jpg"
+                                src="/static/about/img2.jpeg"
                                 alt="Team"
                                 class="img-fluid mb-4"
                         />
                         <img
-                                src="../static/homepage/about-pic3.jpg"
+                                src="/static/about/img3.jpeg"
                                 alt="Team"
                                 class="img-fluid mb-4"
                         />
@@ -101,7 +107,6 @@
             </div>
         </div>
     </div>
-    {% include "components/footer.html" %}
 
-    <script src="/static/about/script.js"></script>
+    {% include "components/footer.html" %}
 {% endblock %}
