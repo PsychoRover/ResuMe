@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block css_link %}
+    <link rel="stylesheet" type="text/css" href="/static/homepage/styles.min.css">
+{% endblock %}
+
+{% block content %}
+    {% include "components/navbar.html" %}
+
+    <video playsinline autoplay loop muted>
+        <source src="/static/homepage/background.mp4" type="video/mp4"/>
+    </video>
+
+    <div id="button-container">
+        <a href="/analyzer">
+            <button type="button" class="btn btn-primary">Let's Start</button>
+        </a>
+    </div>
+{% endblock %}
