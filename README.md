@@ -1,10 +1,10 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/PsychoRover/ResuMe/blob/2614dc23c36fde5e1aefeeb24a79fa126d11810a/logo.png)
 
 
 # ResuMe
 
-A tool to ...
+As an AI-powered candidate screening tool, our aim is to reduce the time it takes for HR to screen candidates. Our machine learning algorithms can quickly analyze resumes and job applications, identifying the best candidates for a given job based on specific criteria such as skills
 
 
 ## Prerequisites
@@ -38,4 +38,5 @@ A tool to ...
 ## Authors
 
 - [@PsychoRover](https://www.github.com/PsychoRover)
+- [@Tlevius](https://github.com/Tlevius) 
 
