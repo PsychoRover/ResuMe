@@ -39,4 +39,5 @@ As an AI-powered candidate screening tool, our aim is to reduce the time it take
 
 - [@PsychoRover](https://www.github.com/PsychoRover)
 - [@Tlevius](https://github.com/Tlevius) 
+- [@HA-22L](https://github.com/HA-22L)
 
