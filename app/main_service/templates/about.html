@@ -1,0 +1,112 @@
+{% extends "index.html" %}
+
+{% block css_link %}
+    <link rel="stylesheet" type="text/css" href="/static/about/styles.min.css"/>
+{% endblock %}
+
+{% block js_link %}
+    <script src="/static/about/script.js"></script>
+{% endblock %}
+
+{% block content %}
+    {% include "components/navbar.html" %}
+
+    <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#banner-carousel" data-slide-to="1"></li>
+            <li data-target="#banner-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Statistics section -->
+        <div class="container-fluid py-5 bg-light">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-search"></i> Job Search Process
+                            </h5>
+                            <p class="card-text">
+                                The average job search takes 3-6 months, and it can be a
+                                challenging and time-consuming process for both job-seekers and
+                                employers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-file-alt"></i> Importance of Resumes
+                            </h5>
+                            <p class="card-text">
+                                A resume is often the first impression that a job-seeker makes on
+                                an employer, and it can play a crucial role in determining whether
+                                they get hired or not.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-user-friends"></i> Candidate Screening
+                            </h5>
+                            <p class="card-text">
+                                Screening candidates can be a daunting task for HR teams,
+                                especially when they receive a large number of applications. Our
+                                platform helps automate this process and save time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team section -->
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="team-images">
+                        <img
+                                src="/static/about/img1.jpeg"
+                                alt="Team"
+                                class="img-fluid mb-4 fadeIn"
+                        />
+                        <img
+                                src="/static/about/img2.jpeg"
+                                alt="Team"
+                                class="img-fluid mb-4 fadeIn"
+                        />
+                        <img
+                                src="/static/about/img3.jpeg"
+                                alt="Team"
+                                class="img-fluid mb-4 fadeIn"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Our Goal</h2>
+                    <p>
+                        At ResuMe, our goal is to revolutionize the hiring process by using
+                        cutting-edge AI technology to improve screening and selection. We
+                        believe that traditional recruitment methods are time-consuming,
+                        inefficient, and often lead to poor hiring decisions. With our
+                        advanced screening tools, we aim to help HR departments to:
+                    </p>
+                    <ul class="goal-list">
+                        <li>Reduce the time and cost of screening and selection</li>
+                        <li>Improve the quality and diversity of candidate pools</li>
+                        <li>Identify the best-fit candidates quickly and accurately</li>
+                        <li>Streamline the entire hiring process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "components/footer.html" %}
+{% endblock %}
