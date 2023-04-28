@@ -12,10 +12,12 @@ templates = Jinja2Templates(directory=Folders.TEMPLATES)
 
 _response = templates.TemplateResponse
 
-Homepage: Template = partial(_response, name=f"templates/homepage.html")
+Homepage: Template = partial(_response, name="templates/homepage.html")
 
-About: Template = partial(_response, name=f"templates/about.html")
+About: Template = partial(_response, name="templates/about.html")
 
-Analyzer: Template = partial(_response, name=f"templates/analyzer.html")
+Analyzer: Template = partial(_response, name="templates/analyzer.html")
 
-Prediction: Template = partial(_response, name=f"templates/prediction.html")
+Prediction: Template = partial(_response, name="templates/prediction.html")
+
+ContactUs: Template = partial(_response, name="templates/contact-us.html")

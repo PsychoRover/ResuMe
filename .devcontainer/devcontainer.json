@@ -17,7 +17,8 @@
 		"esbenp.prettier-vscode",
 		"ms-python.black-formatter",
 		"samuelcolvin.jinjahtml",
-		"monosans.djlint"
+		"monosans.djlint",
+		"josee9988.minifyall"
 	]
     }
   }
