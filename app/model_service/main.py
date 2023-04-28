@@ -4,7 +4,7 @@ import tensorflow as tf
 from fastapi import FastAPI
 from loguru import logger
 
-from app.model_service.functions import get_classes
+from functions import get_classes
 
 if typing.TYPE_CHECKING:
     from keras import Model
