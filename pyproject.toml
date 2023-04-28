@@ -12,6 +12,8 @@ dev = [
     "xgboost>=1.7.4",
     "uvicorn>=0.21.1",
     "httpx>=0.24.0",
+    "black[d]>=23.3.0",
+    "loguru>=0.7.0",
 ]
 
 [project]
