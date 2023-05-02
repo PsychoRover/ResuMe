@@ -130,3 +130,6 @@ dmypy.json
 
 # Keras Model
 **/model/
+
+# PDM
+.pdm-python

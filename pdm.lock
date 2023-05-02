@@ -1593,6 +1593,38 @@ dependencies = [
     "setuptools",
     "six>=1.12.0",
     "tensorboard<2.13,>=2.12",
+    "tensorflow-cpu-aws==2.12.0; platform_system == \"Linux\" and (platform_machine == \"arm64\" or platform_machine == \"aarch64\")",
+    "tensorflow-estimator<2.13,>=2.12.0",
+    "tensorflow-intel==2.12.0; platform_system == \"Windows\"",
+    "tensorflow-io-gcs-filesystem>=0.23.1; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+    "termcolor>=1.1.0",
+    "typing-extensions>=3.6.6",
+    "wrapt<1.15,>=1.11.0",
+]
+
+[[package]]
+name = "tensorflow-cpu-aws"
+version = "2.12.0"
+requires_python = ">=3.8"
+summary = "TensorFlow is an open source machine learning framework for everyone."
+dependencies = [
+    "absl-py>=1.0.0",
+    "astunparse>=1.6.0",
+    "flatbuffers>=2.0",
+    "gast<=0.4.0,>=0.2.1",
+    "google-pasta>=0.1.1",
+    "grpcio<2.0,>=1.24.3",
+    "h5py>=2.9.0",
+    "jax>=0.3.15",
+    "keras<2.13,>=2.12.0",
+    "libclang>=13.0.0",
+    "numpy<1.24,>=1.22",
+    "opt-einsum>=2.3.2",
+    "packaging",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3",
+    "setuptools",
+    "six>=1.12.0",
+    "tensorboard<2.13,>=2.12",
     "tensorflow-estimator<2.13,>=2.12.0",
     "tensorflow-io-gcs-filesystem>=0.23.1; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
     "termcolor>=1.1.0",
@@ -1605,6 +1637,36 @@ name = "tensorflow-estimator"
 version = "2.12.0"
 requires_python = ">=3.7"
 summary = "TensorFlow Estimator."
+
+[[package]]
+name = "tensorflow-intel"
+version = "2.12.0"
+requires_python = ">=3.8"
+summary = "TensorFlow is an open source machine learning framework for everyone."
+dependencies = [
+    "absl-py>=1.0.0",
+    "astunparse>=1.6.0",
+    "flatbuffers>=2.0",
+    "gast<=0.4.0,>=0.2.1",
+    "google-pasta>=0.1.1",
+    "grpcio<2.0,>=1.24.3",
+    "h5py>=2.9.0",
+    "jax>=0.3.15",
+    "keras<2.13,>=2.12.0",
+    "libclang>=13.0.0",
+    "numpy<1.24,>=1.22",
+    "opt-einsum>=2.3.2",
+    "packaging",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3",
+    "setuptools",
+    "six>=1.12.0",
+    "tensorboard<2.13,>=2.12",
+    "tensorflow-estimator<2.13,>=2.12.0",
+    "tensorflow-io-gcs-filesystem>=0.23.1; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+    "termcolor>=1.1.0",
+    "typing-extensions>=3.6.6",
+    "wrapt<1.15,>=1.11.0",
+]
 
 [[package]]
 name = "tensorflow-io-gcs-filesystem"
@@ -1853,7 +1915,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 [metadata]
 lock_version = "4.2"
 groups = ["default", "dev"]
-content_hash = "sha256:1ca252e92cafea96698583183692c949bea979a35601f8fff27e445736bb493a"
+content_hash = "sha256:1dd43d1c82c40334377371c19cb13b5c03cd0439c4e454256f8f6f25d15dd225"
 
 [metadata.files]
 "absl-py 1.4.0" = [
@@ -3815,8 +3877,20 @@ content_hash = "sha256:1ca252e92cafea96698583183692c949bea979a35601f8fff27e44573
     {url = "https://files.pythonhosted.org/packages/e4/8a/0c38f712159d698e6216a4006bc91b31ce9c3412aaeae262b07f02db1174/tensorflow-2.12.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:23850332f1f9f778d697c9dba63ca52be72cb73363e75ad358f07ddafef63c01"},
     {url = "https://files.pythonhosted.org/packages/fc/13/caf9c015b00b4a66932ba3bee57012adf816203978a7dcffb622026e158e/tensorflow-2.12.0-cp38-cp38-win_amd64.whl", hash = "sha256:e29fcf6cfd069aefb4b44f357cccbb4415a5a3d7b5b516eaf4450062fe40021e"},
 ]
+"tensorflow-cpu-aws 2.12.0" = [
+    {url = "https://files.pythonhosted.org/packages/79/3c/28356c3f4ca4e02c9c09beca8cbd3b3e0fe1a2d0f728c5d0652bac9e96bd/tensorflow_cpu_aws-2.12.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d3d5f0cb1bdec07157220f95620af0a25b170273cec9a9b26b3f51229220b965"},
+    {url = "https://files.pythonhosted.org/packages/7a/aa/cecb849f6c19af64da82c8c645d9597ff855423f68057f0e0b237a766d27/tensorflow_cpu_aws-2.12.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:92cc4ff90710a2dfa901994503a65545a75ea7a7ffe830344c201d4a5eee1190"},
+    {url = "https://files.pythonhosted.org/packages/8b/a4/922d2a1012e07642743983b925945138f2eb975a03ef17af4205c41b5817/tensorflow_cpu_aws-2.12.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8b527847d00ec39e10cd3f92fc925cf89ae51944edcba46eea26bb6af276ff35"},
+    {url = "https://files.pythonhosted.org/packages/f5/2a/ad4956f3e5b3eba4b622953d84fbda9faa18d57d8cfdad0d51e01729962b/tensorflow_cpu_aws-2.12.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:3eb8c4d34161cb2af4adebdb71edb25a390d4610c5254e39ac5a790eff2c7ba8"},
+]
 "tensorflow-estimator 2.12.0" = [
     {url = "https://files.pythonhosted.org/packages/d1/e1/c3596da404e2c47561a2bb392397208925e65be6f61bd3081e630371d5e8/tensorflow_estimator-2.12.0-py2.py3-none-any.whl", hash = "sha256:59b191bead4883822de3d63ac02ace11a83bfe6c10d64d0c4dfde75a50e60ca1"},
+]
+"tensorflow-intel 2.12.0" = [
+    {url = "https://files.pythonhosted.org/packages/2c/14/5ae30837269512867efbfa7144b45e816db43b98e3f663f5a51a8148d5c3/tensorflow_intel-2.12.0-cp311-cp311-win_amd64.whl", hash = "sha256:2789b97028ffbfa64846a1736da0021b7be22567d2cdfff826583e63c6d21485"},
+    {url = "https://files.pythonhosted.org/packages/36/5b/401b3eb4b0af7f7a261689255b9944c0d7266eb528b12fe6a6df20b0796c/tensorflow_intel-2.12.0-cp39-cp39-win_amd64.whl", hash = "sha256:2c3ece439d589362374d6e9f7775d2fac4591e0d9fc22a431f2eeaa4a0d2994a"},
+    {url = "https://files.pythonhosted.org/packages/92/74/c7da15b07ed30db10c1ad01ae349fe5db474ebe9c2c68ac912d71c597f0d/tensorflow_intel-2.12.0-cp38-cp38-win_amd64.whl", hash = "sha256:a1eaab8edc87207c9510799aada88c55019055095ae0de0fea0f21a13fae4424"},
+    {url = "https://files.pythonhosted.org/packages/94/b4/f9fe2805899492ec3a38e6846ebe6a402a398e892d573af29f45c6a2a838/tensorflow_intel-2.12.0-cp310-cp310-win_amd64.whl", hash = "sha256:816a6b9018d1ae0defe94508aab2512228fb6a54ab51f5f4f025c857cfe5c7e5"},
 ]
 "tensorflow-io-gcs-filesystem 0.31.0" = [
     {url = "https://files.pythonhosted.org/packages/11/58/84a283d653f7818f6044986e09ad0dafd73389a7a380cae470f29fdc14b9/tensorflow_io_gcs_filesystem-0.31.0-cp38-cp38-win_amd64.whl", hash = "sha256:b4ebb30ad7ce5f3769e3d959ea99bd95d80a44099bcf94da6042f9755ac6e850"},

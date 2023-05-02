@@ -16,10 +16,13 @@
                 "8080"
             ],
             "jinja": true,
-            "justMyCode": true,
+            "justMyCode": false,
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
-            }
+            },
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "python": "${command:python.interpreterPath}",
         },
         {
             "name": "Model",
