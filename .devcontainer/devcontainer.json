@@ -11,7 +11,9 @@
 			"extensions": [
 				"streetsidesoftware.code-spell-checker",
 				"ms-python.python",
-				"ms-python.isort"
+				"ms-python.isort",
+				"GitHub.vscode-pull-request-github",
+				"ms-toolsai.jupyter",
 			]
 		}
 	}
