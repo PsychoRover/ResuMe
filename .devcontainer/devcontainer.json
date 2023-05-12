@@ -13,7 +13,7 @@
 				"ms-python.python",
 				"ms-python.isort",
 				"GitHub.vscode-pull-request-github",
-				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter"
 			]
 		}
 	}
