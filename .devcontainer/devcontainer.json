@@ -1,20 +1,21 @@
 {
-	"name": "ResuMe",
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/pdm:2": {},
-		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
-	},
-	"postCreateCommand": "pdm install",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"streetsidesoftware.code-spell-checker",
-				"ms-python.python",
-				"ms-python.isort",
-				"GitHub.vscode-pull-request-github",
-				"ms-toolsai.jupyter"
-			]
-		}
-	}
+  "name": "ResuMe",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/pdm:2": {},
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+  },
+  "postCreateCommand": "pdm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.python",
+        "ms-python.isort",
+        "GitHub.vscode-pull-request-github",
+        "ms-toolsai.jupyter",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
 }
