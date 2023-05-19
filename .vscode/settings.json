@@ -1,15 +1,27 @@
 {
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "python.analysis.extraPaths": [
-        "${workspaceFolder}/app"
-    ],
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/app"
-    ],
-    "python.linting.enabled": false,
-    "python.analysis.autoSearchPaths": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.completeFunctionParens": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "python.analysis.extraPaths": ["${workspaceFolder}/app"],
+  "python.autoComplete.extraPaths": ["${workspaceFolder}/app"],
+  "python.linting.enabled": false,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "files.associations": {
+    "*.html": "jinja-html"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true
 }

@@ -9,13 +9,16 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "streetsidesoftware.code-spell-checker",
-        "ms-python.python",
-        "ms-python.isort",
-        "GitHub.vscode-pull-request-github",
-        "ms-toolsai.jupyter",
-        "esbenp.prettier-vscode"
-      ]
+		"streetsidesoftware.code-spell-checker",
+		"ms-python.python",
+		"ms-python.isort",
+		"GitHub.vscode-pull-request-github",
+		"ms-toolsai.jupyter",
+		"esbenp.prettier-vscode",
+		"ms-python.black-formatter",
+		"samuelcolvin.jinjahtml",
+		"monosans.djlint"
+	]
     }
   }
 }
