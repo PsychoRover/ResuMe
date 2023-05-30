@@ -1,11 +1,8 @@
+from pathlib import PurePath
+from typing import Callable
+
 import toml
 
-
-def get_classes(path: str) -> list[str]:
-    """
-    Get the classes from a toml file.
-    """
-    with open(path, "r", encoding="utf-8") as f:
-        return toml.load(f)["classes"]
-
-
+get_classes: Callable[[str | bytes | PurePath | list], dict] = lambda path: toml.load(
+    path
+).get("classes")
