@@ -3,6 +3,7 @@ from PyPDF2.errors import PdfReadError
 from fastapi import APIRouter, UploadFile, File
 
 from app.main_service.functions import parse_pdf
+from constants import ENDPOINT
 
 router = APIRouter(prefix="/v1")
 
@@ -13,6 +14,9 @@ async def upload_pdf(pdf_file: UploadFile = File(...)):
         cv_text = parse_pdf(pdf_file.file)
     except PdfReadError:
         return "Wrong file extension, please upload .PDF or .DOCX"
-    response = requests.post("http://localhost:8000/predict", json=[cv_text], timeout=10)
+    response = requests.post(
+        ENDPOINT,
+        json=[cv_text],
+    )
     assurance, category = response.json()
     return {"prediction": category}
