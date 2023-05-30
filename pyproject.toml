@@ -33,6 +33,7 @@ dependencies = [
     "joblib>=1.2.0",
     "python-multipart>=0.0.6",
     "djlint>=1.28.0",
+    "transformers>=4.29.2",
 ]
 requires-python = ">=3.8, <3.12"
 license = {text = "MIT"}
