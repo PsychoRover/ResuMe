@@ -1,0 +1,17 @@
+ p {
+            color: black;
+        }
+         .prediction-box {
+            background-color: #F9F9F9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px #ddd;
+        }
+.image-column {
+            display: flex;
+            align-items: center;
+        }
+.text-column {
+            padding-left: 20px;
+        }
