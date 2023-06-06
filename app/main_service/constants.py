@@ -1,5 +1,5 @@
 MAIN_SERVICE = "app/main_service"
-ENDPOINT = "https://6e4e-34-71-248-128.ngrok.io/predict"
+ENDPOINT = "https://faef-34-143-137-250.ngrok.io/predict"
 
 
 class Folders:
