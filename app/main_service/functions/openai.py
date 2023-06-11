@@ -1,6 +1,8 @@
+import os
+
 from langchain.chat_models import ChatOpenAI
 
-openai_api_key = "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"
+openai_api_key = os.environ["OPENAI_KEY"]
 
 
 llm = ChatOpenAI(
