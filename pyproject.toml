@@ -9,6 +9,7 @@ dev = [
     "httpx>=0.24.0",
     "black[d]>=23.3.0",
     "loguru>=0.7.0",
+    "python-dotenv>=1.0.0",
 ]
 
 [project]
