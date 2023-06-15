@@ -1,34 +1,13 @@
 {% extends "index.html" %}
 
 {% block css_link %}
-    <link rel="stylesheet" type="text/css" href="/static/analyzer/styles.min.css"/>
-{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/analyzer/styles.css"/>
+{% endblock css_link %}
 
 {% block js_link %}
     <script src="/static/analyzer/script.js" defer></script>
-{% endblock %}
+{% endblock js_link %}
 
 {% block content %}
     {% include "components/upload.html" %}
-
-{#    <div id="container">#}
-{##}
-{#        <div id="pdf-viewer">#}
-{#            <h2>Upload new resume</h2>#}
-{#            <object#}
-{#                    id="pdf"#}
-{#                    type="application/pdf"#}
-{#                    width="100%"#}
-{#                    height="600px"#}
-{#                    data=""#}
-{#            ></object>#}
-{#        </div>#}
-{##}
-{#        <div id="skill-extractor" style="display: none">#}
-{#            <h2>Skill Extractor</h2>#}
-{#            <p>List of skills extracted from uploaded PDF:</p>#}
-{#            <ul id="skill-list"></ul>#}
-{#        </div>#}
-{#    </div>#}
-
-{% endblock %}
+{% endblock content %}
