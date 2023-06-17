@@ -1,13 +1,12 @@
 {% extends "index.html" %}
-
 {% block css_link %}
-    <link rel="stylesheet" type="text/css" href="/static/analyzer/styles.css"/>
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ url_for('static', path='analyzer/styles.css') }}" />
 {% endblock css_link %}
-
 {% block js_link %}
     <script src="/static/analyzer/script.js" defer></script>
 {% endblock js_link %}
-
 {% block content %}
     {% include "components/upload.html" %}
 {% endblock content %}
