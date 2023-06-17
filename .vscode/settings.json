@@ -12,9 +12,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
-    "editor.defaultFormatter": "monosans.djlint"
-  },
   "files.associations": {
     "*.html": "jinja-html"
   },
@@ -23,5 +20,6 @@
   "editor.formatOnPaste": true,
   "[jinja-html]": {
     "editor.defaultFormatter": "monosans.djlint"
-  }
+  },
+  "cSpell.words": ["fastapi", "openai", "starlette", "templating"]
 }
