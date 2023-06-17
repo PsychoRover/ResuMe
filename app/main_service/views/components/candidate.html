@@ -1,0 +1,13 @@
+<strong>Relevant Skills:</strong>
+<div class="skill-list">
+    {% for skill in relevant_skills %}
+        <div class="skill-box relevant-skills">{{ skill }}</div>
+    {% endfor
+    %}
+</div>
+<h2>
+    <strong>Missing Skills :</strong>
+</h2>
+<div class="skill-list">
+    {% for skill in missing_skills %}<div class="skill-box missing-skills">{{ skill }}</div>{% endfor %}
+</div>

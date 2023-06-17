@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 
-from ..templates.templates import About, Analyzer, Homepage
+from ..templates import About, Analyzer, Homepage
 
 router = APIRouter()
 

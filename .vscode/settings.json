@@ -15,13 +15,13 @@
   "[html]": {
     "editor.defaultFormatter": "monosans.djlint"
   },
-  "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
-    "editor.defaultFormatter": "monosans.djlint"
-  },
   "files.associations": {
     "*.html": "jinja-html"
   },
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "[jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  }
 }

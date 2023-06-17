@@ -3,7 +3,7 @@ ENDPOINT = "https://7e96-34-142-178-226.ngrok.io/predict"
 
 
 class Folders:
-    TEMPLATES = f"{MAIN_SERVICE}/templates"
+    TEMPLATES = f"{MAIN_SERVICE}/views"
     STATIC = f"{MAIN_SERVICE}/static"
 
 

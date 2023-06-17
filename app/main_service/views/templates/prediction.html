@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+{% block css_link %}
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ url_for('static', path='prediction/prediction.css') }}" />
+{% endblock css_link %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 image-column">
+                <img src="{{ url_for('static', path='prediction/user.png') }}"
+                     alt="picture"
+                     class="img-fluid"
+                     width="auto"
+                     height="auto" />
+            </div>
+            <div class="col-md-9 text-column">
+                <div class="prediction-box">
+                    <p class="has-text-weight-bold">
+                        Candidate name: <span class="has-text-weight-light">{{ name }}</span>
+                    </p>
+                    <p class="has-text-weight-bold">
+                        Candidate Email: <span class="has-text-weight-light">{{ email }}</span>
+                    </p>
+                    <p class="has-text-weight-bold">
+                        Your CV category is: <span class="has-text-weight-light">{{ prediction }}</span>
+                    </p>
+                    <p class="has-text-weight-bold">
+                        Your score is: <span class="has-text-weight-light">{{ assurance }}</span>
+                    </p>
+                    {% if user_type == "recruiter" %}
+                        {% with jobs=[1, 2, 3, 4] %}
+                            {# Don't forget to change! ^^ #}
+                            {% include "./components/recruiter.html" %}
+                        {% endwith %}
+                    {% else %}
+                        {% with relevant_skills=relevant_skills, missing_skills=missing_skills %}
+                            {% include "./components/candidate.html" %}
+                        {% endwith %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

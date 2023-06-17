@@ -1,21 +1,21 @@
 {% extends "index.html" %}
-
 {% block css_link %}
-    <link rel="stylesheet" type="text/css" href="/static/homepage/styles.min.css">
-{% endblock %}
-
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ url_for('static', path='homepage/styles.min.css') }}">
+{% endblock css_link %}
 {% block content %}
     <video playsinline autoplay loop muted>
-        <source src="/static/homepage/background.mp4" type="video/mp4"/>
+        <source src="{{ url_for('static', path='homepage/background.mp4') }}"
+                type="video/mp4" />
     </video>
-
     <div id="button-container">
         <a href="/analyzer">
             <button type="button" class="button is-large is-success">
-                 <span class="icon is-small">
+                <span class="icon is-small">
                     <i class="fas fa-play-circle"></i>
                 </span>Let's Start
             </button>
         </a>
     </div>
-{% endblock %}
+{% endblock content %}

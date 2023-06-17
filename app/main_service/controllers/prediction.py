@@ -10,4 +10,4 @@ router = APIRouter(prefix="/v1")
 async def upload_pdf(
     request: Request, user_type: str = Form(...), pdf_file: UploadFile = File(...)
 ):
-    return analyzer_resolver.get(user_type)(request, pdf_file)
+    return analyzer_resolver.get(user_type)(request, pdf_file, user_type)
