@@ -2,5 +2,7 @@
     <strong>Job history:</strong>
 </h2>
 <div class="skill-list">
-    {% for job in jobs %}<div class="skill-box relevant-skills">{{ job }}</div>{% endfor %}
+    {% for i, (job, role) in jobs_roles %}
+        <div class="skill-box relevant-skills">{{ i }}.{{ job }} - {{ role }}</div>
+    {% endfor %}
 </div>

@@ -29,8 +29,7 @@
                         Your score is: <span class="has-text-weight-light">{{ assurance }}</span>
                     </p>
                     {% if user_type == "recruiter" %}
-                        {% with jobs=[1, 2, 3, 4] %}
-                            {# Don't forget to change! ^^ #}
+                        {% with jobs_roles=jobs_roles %}
                             {% include "./components/recruiter.html" %}
                         {% endwith %}
                     {% else %}
