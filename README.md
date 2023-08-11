@@ -4,7 +4,8 @@
 
 # ResuMe
 
-As an AI-powered candidate screening tool, our aim is to reduce the time it takes for HR to screen candidates. Our machine learning algorithms can quickly analyze resumes and job applications, identifying the best candidates for a given job based on specific criteria such as skills
+As an AI-powered candidate screening tool, our aim is to reduce the time it takes for HR to screen candidates. 
+Our machine learning algorithms can quickly analyze resumes and job applications, identifying the best candidates for a given job based on specific criteria such as skills.
 
 
 ## Prerequisites
