@@ -4,7 +4,7 @@
 
 # ResuMe
 
-As an AI-powered candidate screening tool, our aim is to reduce the time it takes for HR to screen candidates. 
+As an AI-powered candidate screening tool, our aim is to reduce the time it takes for HR to screen candidates.  
 Our machine learning algorithms can quickly analyze resumes and job applications, identifying the best candidates for a given job based on specific criteria such as skills.
 
 
@@ -42,3 +42,8 @@ Our machine learning algorithms can quickly analyze resumes and job applications
 - [@Tlevius](https://github.com/Tlevius) 
 - [@HA-22L](https://github.com/HA-22L)
 
+## Disclaimer
+
+This repository is an academic work and the code within it should not be used for commercial purposes.  
+The code is provided as-is and the authors do not make any warranties or representations, express or implied, about its suitability for any particular purpose.  
+The authors shall not be liable for any damages arising out of the use of this code.
